@@ -27,7 +27,8 @@ public class AirtelRestController {
 			@RequestHeader(name = "requestId", required = true) String requestId,
 			@RequestHeader(name = "msgTs", required = true) String msgTs,
 			@RequestHeader(name = "version", required = true) String version) {
-		return new AirtelServiceResponse("101", "Valid User", true, "Looks like Valid Customer");
+		System.out.println("AirtelRestController executed");
+		return new AirtelServiceResponse("200", "Valid User", true, "Looks like Valid Customer");
 	}
 
 }
